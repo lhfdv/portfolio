@@ -55,13 +55,27 @@ body{
 .aboutMe{
 	max-width: 94%;
 }
-.Skills{
+.Skills,
+.Contact{
 	  background-color: #636e72;
 	  color: #fff;
 }
 .skill{
 	text-align: center;
 	margin-left: 10px;
+}
+.contactButton{
+	color: #fff;
+	padding: 15px 20px;
+	display: inline-block;
+	margin-top: 20px;
+	border: 1px solid #fff;
+	border-radius: 2px;
+}
+.contactButton:hover{
+	text-decoration: none;
+	color:  #636e72;
+	background-color: #fff;
 }
 .chart{
 	position: relative;
