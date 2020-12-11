@@ -61,4 +61,32 @@ $(document).ready(function(){
             countUpEnd = true;
         }
     });
+
+    $("[data-fancybox]").fancybox();
+    $(".items").isotope({
+        filter: '*',
+        animationOptiopns: {
+            duration: 1520,
+            easing: 'linear',
+            queue: false
+        }
+    });
+
+    $("#filters a").click(function(){
+        $("#filters .current").removeClass("current");
+        $(this).addClass("current");
+        var selector = $(this).attr("data-filter");
+
+        $(".items").isotope({
+            filter: selector,
+            animationOptiopns: {
+                duration: 1520,
+                easing: 'linear',
+                queue: false
+            }
+        });
+
+        return false;
+    })
+
 });
