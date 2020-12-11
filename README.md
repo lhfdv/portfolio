@@ -1,4 +1,4 @@
 # portfolio
-Portfolio. Made using jQuery e Boostrap.
+Portfolio. Made using jQuery and Boostrap.
 
 In progress
